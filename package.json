@@ -1,0 +1,11 @@
+{
+  "devDependencies": {
+    "electron-vite": "^2.3.0"
+  },
+  "scripts": {
+    "start": "electron-vite preview",
+    "dev": "electron-vite dev",
+    "prebuild": "electron-vite build",
+    "build": "tsc && copyfiles -u 1 src/Worker/*.js out/main/Worker/"
+  }
+}
